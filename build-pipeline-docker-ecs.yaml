@@ -6,13 +6,15 @@ Parameters:
   ProjectName:
     Type: String
     Description: The name of the project.
+    Default: employee-ecs-service
   RepositoryOwner:
     Type: String
     Description: The owner of the GitHub repository.
-    Default: S-Polimetla
+    Default: swanand7
   RepositoryName:
     Type: String
     Description: The name of the GitHub repository.
+    Default: aws-ecs-springboot
   RepositoryBranch:
     Type: String
     Description: The name of the branch.
@@ -20,6 +22,7 @@ Parameters:
   DockerImageRepository: # Should be the same as 'DockerImageRepository' in config.json
     Type: String
     Description: The name of the ECR Repository  
+    Default: employee-ecs-image
 
 Resources:
 
